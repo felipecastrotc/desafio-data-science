@@ -87,9 +87,12 @@ import numpy as np
 import pandas as pd
 import scipy.stats as st
 import urllib.request as ur
-import matplotlib.pyplot as plt
 import sklearn.feature_selection as fs
 from zipfile import ZipFile
+
+import matplotlib
+matplotlib.use('Agg')  # Renderização em ambientes 'headless'
+import matplotlib.pyplot as plt
 
 
 # Armazenameno dos gráficos
